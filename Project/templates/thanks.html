@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="/static/images/favicon.png" type="">
+
+  <title>Thanks for Ordering</title>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!--owl slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- nice select  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha512-CruCP+TD3yXzlvvijET8wV5WxxEh5H8P4cmz0RFbKK6FlZ2sYl3AEsKlLPHbniXKSrDdFewhbmBK5skbdsASbQ==" crossorigin="anonymous" />
+  <!-- font awesome style -->
+  <link href="/static/css/font-awesome.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+
+<style>
+        
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+
+    max-width: calc(100% - 20px);
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #FFC43F;
+}
+
+p {
+    margin-bottom: 20px;
+}
+.thank-you-message{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+.btn{
+  background-color: #FFC43F;
+}
+
+</style>
+
+  
+<body>
+
+    <header class="header_section">
+        <div class="">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="index.html">
+              <span>
+                Feane
+              </span>
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class=""> </span>
+            </button>
+            <div id="shopping-cart">
+              <h1>Shopping Cart</h1>
+              <ul id="cart-items"></ul>
+              <!-- <p>Total: $<span id="cart-total">0</span></p> -->
+            </div>
+    
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="{{ url_for('menu') }}">Menu <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item active">
+                      <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="{{ url_for('book') }}"></a>
+                  </li>
+              </ul>
+              <div class="user_option">
+                  </form>
+                  <a href="{{ url_for('get_cart') }}" class="order_online">
+                    Cart
+                  </a>
+              </div>
+          </div>
+          
+          </nav>
+        </div>
+      </header>
+
+    <div class="container">
+        <div class="thank-you-message">
+            <h2>Thank You for Your Order!</h2>
+            <p>Your order has been successfully placed. </p>
+        
+        <div class="return-home">
+            <a href="{{ url_for('index') }}" class="btn">Return to Home</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer_section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 footer-col">
+              <div class="footer_contact">
+                <h4>
+                  Contact Us
+                </h4>
+                <div class="contact_link_box">
+                  <a href="">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <span>
+                      Location
+                    </span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>
+                      Call +92 1234567890
+                    </span>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>
+                      ManagerFeane@gmail.com
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <div class="footer_detail">
+                <a href="" class="footer-logo">
+                  Feane
+                </a>
+                <p>
+                  Necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with
+                </p>
+                <div class="footer_social">
+                  <a href="">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                  </a>
+                  <a href="">
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 footer-col">
+              <h4>
+                Opening Hours
+              </h4>
+              <p>
+                Everyday
+              </p>
+              <p>
+                11.00 Am -11.00 Pm
+              </p>
+            </div>
+          </div>
+          <div class="footer-info">
+            <p>
+              &copy; <span id="displayYear"></span> All Rights Reserved By
+              <a href="https://html.design/">Feane and Co.</a><br><br>
+              &copy; <span id="displayYear"></span> Distributed By
+              <a href="https://themewagon.com/" target="_blank">Abdullah </a>
+            </p>
+          </div>
+        </div>
+      </footer>
+      <!-- footer section -->
+ 
+</body>
+</html>
