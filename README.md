@@ -5,16 +5,17 @@ The Online Food Ordering System is a dynamic web application that simplifies the
 
 
 ## Features
-**Dynamic Menu:**
+
+1. **Dynamic Menu:**
 Menu items are loaded dynamically from a MySQL database, providing flexibility and ease of management.
 
-**Custom Cart:**
+2. **Custom Cart:**
 A carefully crafted shopping cart allows users to add, remove, and manage their selected items seamlessly.
 
-**Order Processing:**
+3. **Order Processing:**
 Efficient backend functionality processes orders, ensuring a smooth and responsive user experience.
 
-**Database Integration:**
+4. **Database Integration:**
 MySQL database stores essential information, such as menu items, user details, and order history.
 
 ## Technologies Used
